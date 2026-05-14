@@ -3913,3 +3913,21 @@ body {
     background-repeat: repeat !important;
     background-size: auto, cover !important;
 }
+
+/* Reduce font size on mobile devices */
+@media screen and (max-width: 736px) {
+    html, body {
+        font-size: 11pt !important; /* Adjust this number to your preference */
+    }
+
+    section.main p, 
+    section.main li {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+
+    h2 {
+        font-size: 1.25rem !important;
+        letter-spacing: 0.05em !important;
+    }
+}
