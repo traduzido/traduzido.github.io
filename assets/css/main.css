@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
 /*
 	Stellar by HTML5 UP
@@ -21,7 +22,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 28pt;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -126,7 +127,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
+		font-size: 15pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -134,7 +135,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -142,7 +143,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -150,7 +151,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -3123,6 +3124,13 @@ input, select, textarea {
 					margin: 0 auto;
 					max-width: 75%;
 				}
+				
+				#header .logo img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover; /* Ensures the image isn't stretched if not perfectly square */
+          border-radius: 50%; /* Makes the image circular */
+      }
 
 		@media screen and (max-width: 1280px) {
 
@@ -3221,7 +3229,7 @@ input, select, textarea {
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: #f0f0f0;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3258,7 +3266,7 @@ input, select, textarea {
 		}
 
 		#nav + #main {
-			padding-top: 4.25em;
+			padding-top: 3.25em;
 		}
 
 		#nav ul {
@@ -3690,7 +3698,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		padding: 1em 5em 3em 5em ;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
 	}
@@ -3702,8 +3710,8 @@ input, select, textarea {
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
-			font-size: 0.8em;
+			margin: 0.5em 0 2em 0;
+			font-size: 1.2em;
 			text-align: center;
 		}
 
@@ -3783,3 +3791,125 @@ input, select, textarea {
 			}
 
 		}
+
+/* CUSTOM AI SLOP */
+
+/* Timeline Badges */
+.date-badge {
+    font-size: 0.8em;
+    font-weight: 500;
+    opacity: 0.65;
+    padding-left: 0.75em; /* Adds space directly between the name and the date */
+}
+
+/* Make nav links bold */
+#nav ul li a {
+    font-weight: bold !important;
+}
+
+/* Body Color */
+#main > .main {
+    background-color: #f7f7f7 !important;
+}
+
+/* Reduce padding on section tops */
+.main > .spotlight, 
+section.main {
+    padding-top: 2rem !important;
+}
+
+/* Shrink the maximum container width down to 50em */
+#wrapper {
+    max-width: 50em !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+#nav {
+    max-width: 50em !important;
+    width: 90% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Make the form submit button darker and high-contrast */
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"], 
+button, 
+.button {
+    background-color: #0b3c95 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* Give it a slight glow or shift when hovered over */
+input[type="submit"]:hover, 
+button:hover, 
+.button:hover {
+    background-color: #1e56cc !important;
+}
+
+/* Change the active/selected nav tab highlight to royal blue */
+#nav ul li a.active {
+    background-color: #0b3c95 !important;
+    color: #ffffff !important;
+}
+
+/* Change the hover highlight on inactive tabs to a lighter blue */
+#nav ul li a:hover {
+    background-color: rgba(30, 86, 204, 0.15) !important;
+    color: #1e56cc !important;
+}
+
+/* Darken the body text and headings for better readability */
+section.main p, 
+section.main li, 
+section.main span,
+section.main dt,
+section.main dd {
+    color: #2e353f !important;
+}
+
+/* Make headings and strong text even sharper/darker */
+section.main h1, 
+section.main h2, 
+section.main h3, 
+section.main strong {
+    color: #11161d !important;
+}
+
+/* Fonts */
+
+#header h1 {
+    font-family: 'Hubballi', sans-serif !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+}
+
+/* Reduce the gap between the header subtitles */
+#header h2 {
+    margin-bottom: 0em !important;
+}
+
+#header h1 {
+    margin-bottom: 0em !important;
+}
+
+/* Custom class for high-visibility header secondary (bottom) text */
+.header-secondary {
+    color: rgba(255, 255, 255, 0.6) !important; /* High visibility white */
+    font-weight: 400 !important;
+    margin-bottom: 0.1rem !important;
+    opacity: 1 !important; /* Overrides any inherited transparency */
+}
+
+/* Replace the default overlay with your new asphalt pattern */
+body {
+    background-color: #092B60 !important;
+    background-image: url("images/xv.png"), 
+                      linear-gradient(45deg, #01579B 0%, #01579B 40%, #051939 85%) !important;
+    background-repeat: repeat !important;
+    background-size: auto, cover !important;
+}
