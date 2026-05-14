@@ -127,7 +127,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 15pt;
+		font-size: 12pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -135,7 +135,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 15pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -143,7 +143,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 15pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -151,9 +151,8 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 15pt;
+				font-size: 12pt;
 			}
-
 		}
 
 	a {
@@ -3812,12 +3811,6 @@ input, select, textarea {
     background-color: #f7f7f7 !important;
 }
 
-/* Reduce padding on section tops */
-.main > .spotlight, 
-section.main {
-    padding-top: 2rem !important;
-}
-
 /* Shrink the maximum container width down to 50em */
 #wrapper {
     max-width: 50em !important;
@@ -3880,7 +3873,6 @@ section.main strong {
 }
 
 /* Fonts */
-
 #header h1 {
     font-family: 'Hubballi', sans-serif !important;
     font-weight: 400 !important;
@@ -3901,7 +3893,7 @@ section.main strong {
 .header-secondary {
     color: rgba(255, 255, 255, 0.6) !important; /* High visibility white */
     font-weight: 400 !important;
-    margin-bottom: 0.1rem !important;
+    margin-bottom: 0.2em !important;
     opacity: 1 !important; /* Overrides any inherited transparency */
 }
 
