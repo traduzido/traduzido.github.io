@@ -3900,7 +3900,7 @@ section.main strong {
 /* BACKGROUND: Replace the default overlay */
 body {
     background-color: #092B60 !important;
-    background-image: url("images/asfalt-light.png"), 
+    background-image: url("images/black-twill.png"), 
                       linear-gradient(45deg, #01579B 0%, #01579B 40%, #051939 85%) !important;
     background-repeat: repeat !important;
     background-size: auto, cover !important;
