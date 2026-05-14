@@ -3808,7 +3808,7 @@ input, select, textarea {
 
 /* Body Color */
 #main > .main {
-    background-color: #f7f7f7 !important;
+    background-color: #f1f1f1 !important;
 }
 
 /* Shrink the maximum container width down to 50em */
@@ -3881,13 +3881,16 @@ section.main strong {
 }
 
 /* Reduce the gap between the header subtitles */
+#header h3 {
+    margin-top: 1em !important;
+}
+#header h1 {
+    margin-bottom: 0em !important;
+}
 #header h2 {
     margin-bottom: 0em !important;
 }
 
-#header h1 {
-    margin-bottom: 0em !important;
-}
 
 /* Custom class for high-visibility header secondary (bottom) text */
 .header-secondary {
@@ -3901,7 +3904,7 @@ section.main strong {
 body {
     background-color: #092B60 !important;
     background-image: url("images/black-twill.png"), 
-                      linear-gradient(45deg, #01579B 0%, #01579B 40%, #051939 85%) !important;
+                      linear-gradient(45deg, #01579B 0%, #01579B 40%, #092A5E 85%) !important;
     background-repeat: repeat !important;
     background-size: auto, cover !important;
 }
@@ -3987,7 +3990,7 @@ ul.actions {
 
 /* Reduce top padding of main sections */
 section.main {
-    padding-top: 2rem !important;
+    padding-top: 1rem !important;
 }
 
 /* Reduce the top margin of the headers specifically */
@@ -3996,10 +3999,10 @@ section.main header.major {
     padding-top: 0 !important;
 }
 
-/* Final gap and centering fix for Clientes on mobile */
+/* Final gap and centering fix for "Clientes" on mobile */
 @media screen and (max-width: 736px) {
     #clientes.main {
-        padding-top: 4rem !important;
+        padding-top: 2rem !important;
     }
 
     #clientes .custom-mobile-center {
