@@ -127,7 +127,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 12pt;
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -135,7 +135,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -143,7 +143,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -3916,3 +3916,49 @@ textarea::placeholder {
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 1rem !important; }
 input::-moz-placeholder, textarea::-moz-placeholder { font-size: 1rem !important; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 1rem !important; }
+
+/* Specifically left-align list items on mobile */
+@media screen and (max-width: 736px) {
+    section.main ul, 
+    section.main ol {
+        text-align: left !important;
+        margin-left: 1.5em !important; /* Ensures space for bullets/numbers */
+        padding-left: 0 !important;
+    }
+
+    section.main li {
+        text-align: left !important;
+    }
+}
+
+/* Custom bullet symbol */
+section.main ul {
+    list-style-type: "✔ " !important;
+    padding-left: 1.5rem !important; /* Give the custom symbol room */
+}
+
+/* Remove bullet markers specifically from button groups */
+ul.actions li::marker,
+ul.actions li:before {
+    content: none !important;
+}
+
+ul.actions {
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Ensure buttons stay centered if you want them centered, 
+   otherwise remove this line to keep them left-aligned */
+ul.actions {
+    text-align: center !important;
+}
+
+/* Resize logo specifically for mobile devices */
+@media screen and (max-width: 736px) {
+    #header .logo img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
