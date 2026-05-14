@@ -3882,22 +3882,13 @@ section.main strong {
 
 /* Reduce the gap between the header subtitles */
 #header h3 {
-    margin-top: 1em !important;
+    margin-top: 0em !important;
 }
 #header h1 {
     margin-bottom: 0em !important;
 }
 #header h2 {
     margin-bottom: 0em !important;
-}
-
-
-/* Custom class for high-visibility header secondary (bottom) text */
-.header-secondary {
-    color: rgba(255, 255, 255, 0.6) !important; /* High visibility white */
-    font-weight: 400 !important;
-    margin-bottom: 0.2em !important;
-    opacity: 1 !important; /* Overrides any inherited transparency */
 }
 
 /* BACKGROUND: Replace the default overlay */
