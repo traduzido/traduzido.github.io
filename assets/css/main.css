@@ -143,7 +143,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -151,7 +151,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 10pt;
 			}
 		}
 
@@ -3934,7 +3934,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 1rem !i
 /* Custom bullet symbol */
 section.main ul {
     list-style-type: "✔ " !important;
-    padding-left: 0.1rem !important; /* Give the custom symbol room */
+    padding-left: 0.2rem !important; /* Give the custom symbol room */
 }
 
 /* Remove bullet markers specifically from button groups */
@@ -3984,3 +3984,4 @@ ul.actions {
         margin: 0 auto !important; /* Centers the button block */
     }
 }
+
