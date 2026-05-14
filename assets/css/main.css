@@ -3949,12 +3949,6 @@ ul.actions {
     margin-left: 0 !important;
 }
 
-/* Ensure buttons stay centered if you want them centered, 
-   otherwise remove this line to keep them left-aligned */
-ul.actions {
-    text-align: center !important;
-}
-
 /* Resize logo specifically for mobile devices */
 @media screen and (max-width: 736px) {
     #header .logo img {
