@@ -3985,3 +3985,13 @@ ul.actions {
     }
 }
 
+/* Reduce top padding of main sections */
+section.main {
+    padding-top: 2rem !important;
+}
+
+/* Reduce the top margin of the headers specifically */
+section.main header.major {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
