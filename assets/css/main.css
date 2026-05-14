@@ -3934,7 +3934,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 1rem !i
 /* Custom bullet symbol */
 section.main ul {
     list-style-type: "✔ " !important;
-    padding-left: 0.2rem !important; /* Give the custom symbol room */
+    padding-left: 0.25rem !important; /* Give the custom symbol room */
 }
 
 /* Remove bullet markers specifically from button groups */
@@ -3994,4 +3994,37 @@ section.main {
 section.main header.major {
     margin-top: 0 !important;
     padding-top: 0 !important;
+}
+
+/* Final gap and centering fix for Clientes on mobile */
+@media screen and (max-width: 736px) {
+    #clientes.main {
+        padding-top: 4rem !important;
+    }
+
+    #clientes .custom-mobile-center {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    #clientes .custom-mobile-center h2 {
+        display: inline-block !important;
+        width: auto !important;
+        margin: 0 auto 1.5rem auto !important; /* Bottom margin creates the gap */
+        padding-bottom: 0.5rem !important;
+        position: relative !important;
+    }
+
+    #clientes .custom-mobile-center h2:after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: -0.5rem !important; /* Positions the bar lower */
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 5rem !important;
+        height: 2px !important;
+        margin: 0 !important;
+    }
 }
