@@ -3806,7 +3806,7 @@ input, select, textarea {
     font-weight: bold !important;
 }
 
-/* Body Color */
+/* Main content color */
 #main > .main {
     background-color: #f1f1f1 !important;
 }
@@ -3889,15 +3889,6 @@ section.main strong {
 }
 #header h2 {
     margin-bottom: 0em !important;
-}
-
-/* BACKGROUND: Replace the default overlay */
-body {
-    background-color: #092B60 !important;
-    background-image: url("images/black-twill.png"), 
-                      linear-gradient(45deg, #01579B 0%, #01579B 40%, #092A5E 85%) !important;
-    background-repeat: repeat !important;
-    background-size: auto, cover !important;
 }
 
 /* Make form placeholder text smaller */
@@ -4021,4 +4012,25 @@ section.main header.major {
         height: 2px !important;
         margin: 0 !important;
     }
+}
+
+/* BACKGROUND: Replace the default overlay */
+body {
+     background-image: var(--topo-pattern), 
+                      linear-gradient(15deg, #0B2E63 0%, #0B2E63 40%, #071C3C 85%) !important;
+    background-repeat: repeat !important;
+    background-size: auto, cover !important;
+}
+
+/* Forced pitch black shadow for H1 */
+#header h1, 
+#header .alt h1, 
+header#header h1 {
+    text-shadow: 0 4px 10px #000000, 
+                 0 10px 30px #000000, 
+                 0 0 50px #000000 !important;
+    color: #ffffff !important;
+    position: relative !important;
+    z-index: 99 !important;
+    display: block !important;
 }
