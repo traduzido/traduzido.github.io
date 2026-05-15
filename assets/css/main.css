@@ -3341,10 +3341,13 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #636363;
-		border-radius: 0.25em;
-	}
+    background-color: #ffffff;
+    color: #636363;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 		#main input, #main select, #main textarea {
 			color: #636363;
@@ -4012,6 +4015,16 @@ section.main header.major {
         height: 2px !important;
         margin: 0 !important;
     }
+}
+
+/* Increase Nav Bar Corner Radius */
+#nav {
+    border-top-left-radius: 20px !important; /* Increase this number for more rounded corners */
+    border-top-right-radius: 20px !important; /* Increase this number for more rounded corners */
+}
+
+#nav ul {
+    border-radius: 20px !important; /* Ensures the inner list matches the container */
 }
 
 /* BACKGROUND: Replace the default overlay */
